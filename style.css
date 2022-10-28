@@ -7,7 +7,7 @@ body{
 
 	height: 50vh;
 	opacity: 0.8;
-	background-image: url(image/macbook_mouse.jpg);
+	background-image: url(https://images.pexels.com/photos/268415/pexels-photo-268415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -86,6 +86,16 @@ body{
 	font-family: Arial;
 }
 
+.bgblue{
+
+	background-color: blue;
+}
+
+.bgdarkblue{
+
+	background-color: #3333ff;
+}
+
 
 #about {
 
@@ -105,7 +115,7 @@ body{
 	height: 12rem;
 	width: 12rem;
 	margin: auto;
-	margin-top: -17vh;
+	margin-top: -12vh;
 }
 
 #self-portrait img{
@@ -131,7 +141,7 @@ section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	 
 }
 
 section:nth-child(2n){
@@ -147,7 +157,7 @@ section:nth-child(2n+1){
 .section-heading{
 
 	width: auto;
-	padding: 20px 10px 10px;
+	padding: 15px 10px 10px;
 	font-weight: 400;
 }
 
@@ -184,41 +194,60 @@ section:nth-child(2n+1){
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
+	margin-bottom: 50px;
 }
 
 .skill-progress{
 
-	width: 7rem;
-	height: 1.4rem;
+	width: 14rem;
+	height: 2.4rem;
 	background-color: lightgrey;
-	border-radius: 0.8rem;
+	border-radius: 1.6rem;
 	/*border: 2px solid black;*/
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .skill-progress>div{
 
 
 	border-radius: 20px 0px 0px 20px;
-}
-
-.skill-name span{
-
-	color: white;
-	font-family: helvetica;
-	font-size: 1rem;
-	margin-left: 10px;
-
+	display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
 }
 
 /*Percentage Classes*/
 
-.eighty-five-percent{
+.eighty-five-percent-blue{
 
-	background-color: #0099ff;
-	width: 85%;
+	
+	background-color: #49a3e3;
+	width: auto;
 	height: inherit;
-	margin-top: -0.8px;
-	margin-bottom: 100px;
+	margin-left: 30px;
 }
+
+
+.skill-name {
+
+	display: inline-block;
+}
+
+.skill-name span{
+
+	
+	color: white;
+	font-family:  helvetica;
+	font-size: 0.9rem;
+	margin-left: 15px;
+	margin-right: 85px;
+}
+
+.eighty-five-percent-darkblue{
+
+	background-color: #265494;
+	width: auto;
+	height: inherit;
+	margin-left: 30px;
+}
+
