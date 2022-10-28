@@ -189,7 +189,7 @@ section:nth-child(2n+1){
 
 .skills-display{
 
-	width: 70%;
+	width: 90%;
 	/*height: 100px;*/
 	display: flex;
 	flex-wrap: wrap;
@@ -251,3 +251,70 @@ section:nth-child(2n+1){
 	margin-left: 30px;
 }
 
+.timeline{
+
+	position: relative;
+	width: 75%;
+	border: 2px solid black;
+}
+
+.timeline-box{
+
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n){
+
+	left:53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+
+	content: '';
+	position: absolute;
+	top:30%;
+	right: -12.6%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #265494;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+
+	content: '';
+	position: absolute;
+	top:47%;
+	left: -9%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #265494;
+	z-index: 1;
+}
+
+.timeline-divider{
+
+	position: absolute;
+	height: 75%;
+	width: 0;
+	border: 3px dashed #0096fa6b;
+	top: 10%;
+	left: 50%;
+
+}
+
+.timeline-traveller{
+
+	position: sticky;
+	top: 20%;
+	left: -10%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
